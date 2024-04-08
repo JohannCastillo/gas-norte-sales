@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Product } from "types/Product";
 import styles from "./styles.module.css";
-
+import Image from "next/image";
 export default function ProductCard(Product: Product) {
   return (
     <Link
@@ -9,7 +9,7 @@ export default function ProductCard(Product: Product) {
       className={`${styles.Card} rounded-lg shadow-lg border border-gray-200 hover:scale-[1.02] transition-all duration-300 ease-in-out h-[298px]`}
     >
       <header className="w-full h-[160px] rounded-t-lg text-white">
-        <img
+        <Image
           src={
             Product.imageURL ? Product.imageURL : "https://picsum.photos/200"
           }

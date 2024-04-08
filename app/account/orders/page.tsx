@@ -63,7 +63,7 @@ function Empty() {
       <header>
         <h2 className="text-xl font-bold">Your orders history is empty</h2>
       </header>
-      <p>You don't have any orders yet, start shopping now</p>
+      <p>{"You don't have any orders yet, start shopping now"}</p>
 
       <article className={`w-full ${"grid place-content-center"}`}>
         <Link href="/products">

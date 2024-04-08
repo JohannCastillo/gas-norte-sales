@@ -1,10 +1,10 @@
 import { Button, Card } from "flowbite-react";
 import Link from "next/link";
-
+import Image from "next/image";
 interface Props {
   cardTitle: string;
   discount?: string;
-  imageUrl?: string;
+  imageUrl: string;
   description: string;
   buttonText?: string;
   linkRef?: string;
@@ -29,7 +29,7 @@ export default function CardComponent({
         )}
       </header>
 
-      <img
+      <Image
         alt={cardTitle}
         className="w-full h-64 object-contain"
         src={imageUrl}

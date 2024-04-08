@@ -3,6 +3,7 @@ import { getProductById } from "services/api/Product";
 import { notFound, redirect } from "next/navigation";
 import QuantityInput from "@/components/shared/QuantityInput";
 import AddToCartBtn from "@/components/shared/AddCartBtn";
+import Image from "next/image";
 
 export default async function ProductDetails({
   params,
@@ -22,7 +23,7 @@ export default async function ProductDetails({
       className={`min-h-screen m-4 md:mt-20 md:ml-20 grid grid-cols-1 md:grid-cols-2`}
     >
       <picture className="w-full h-full">
-        <img
+        <Image
           src={selectedProduct.imageURL}
           alt={selectedProduct.name}
           className="object-contain text-black min-w-full min-h-[200px] md:h-[500px]"

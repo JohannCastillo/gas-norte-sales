@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { OrderDetails } from "types/Order";
-
+import Image from "next/image";
 export default function OrderDetail({ detail }: { detail: OrderDetails }) {
   return (
     <div className="flex flex-col md:flex-row w-full rounded-md p-4 md:items-center justify-center">
       {/* Details */}
       <div className="flex items-center gap-4 w-full">
-        <img
+        <Image
           src={detail.product.imageURL}
           alt={detail.product.title}
           className="w-16 h-16 rounded-md shadow-2xl bg-gray-100 dark:bg-gray-700 object-contain text-xs"

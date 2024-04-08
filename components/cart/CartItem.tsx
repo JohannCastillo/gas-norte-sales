@@ -1,6 +1,5 @@
-import { Button } from "flowbite-react";
 import { HiTrash } from "react-icons/hi";
-import QuantityInput from "../shared/QuantityInput";
+import Image from "next/image";
 // TODO: Separate in components
 export default function CartItem() {
   const CustomTrigger = () => {
@@ -16,7 +15,7 @@ export default function CartItem() {
       <div className="flex flex-wrap justify-between items-center w-full">
         {/* Details */}
         <div className="flex items-center gap-4">
-          <img
+          <Image
             src="https://www.gascylinder.net/uploads/202115144/12-5kg-propane-gas-lpg-cylinder-iso470623585350824.jpg"
             alt="product"
             className="w-24 h-24 rounded-md shadow-2xl"

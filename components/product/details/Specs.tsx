@@ -16,7 +16,7 @@ export default function Specs({ specs }: Props) {
         <Table.Body className="divide-y">
           {specs?.map((spec) => {
             return (
-              <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+              <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800" key={spec.specId}>
                 <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
                   {spec.specName}
                 </Table.Cell>
