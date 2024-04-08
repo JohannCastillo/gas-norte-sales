@@ -1,0 +1,68 @@
+import { Venta } from "@/lib/ventas/definitions";
+
+export const VENTA_EXAMPLES: Venta[] = [
+    {
+    id: 0,
+    customer_id: 0,
+    customer_name: "Johann Castillo",
+    customer_dni: "12345678",
+    customer_phone: "987654321",
+    sale_date: "2024-01-01",
+    total: 200,
+    typePayment: "Boleta",
+    igv: 36,
+    subtotal: 164,
+    customer_business_name: null,
+    customer_ruc: null,
+    customer_email: "johann@example.com",
+    saleDetails: [
+      {
+        id: 0,
+        product_id: "1",
+        product_name: "Producto 1",
+        product_price: 100,
+        quantity: 1,
+        subtotal: 100,
+      },
+      {
+        id: 1,
+        product_id: "2",
+        product_name: "Producto 2",
+        product_price: 100,
+        quantity: 1,
+        subtotal: 100,
+      },
+    ],
+  },{
+    id: 1,
+    customer_id: 1,
+    customer_name: null,
+    customer_dni: null,
+    customer_phone: "987654321",
+    sale_date: "2024-01-01",
+    total: 200,
+    typePayment: "Factura",
+    igv: 36,
+    subtotal: 164,
+    customer_business_name: "Castillo S.A.",
+    customer_ruc: "12345678911",
+    customer_email: "johann@example.com",
+    saleDetails: [
+      {
+        id: 0,
+        product_id: "1",
+        product_name: "Producto 1",
+        product_price: 100,
+        quantity: 1,
+        subtotal: 100,
+      },
+      {
+        id: 1,
+        product_id: "2",
+        product_name: "Producto 2",
+        product_price: 100,
+        quantity: 1,
+        subtotal: 100,
+      },
+    ],
+  }];

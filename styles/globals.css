@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply dark:[&>*]:text-white;
+    scroll-behavior: smooth;
+    scrollbar-gutter: always both-edges;
+    position: relative;
+}

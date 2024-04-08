@@ -1,0 +1,15 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+}
+
+.cardImage{
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
